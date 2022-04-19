@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon-32x32.png" type="image/x-icon">
+    <title>Наша Галичина</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="header__nav">
+          <a class="logo" href="./index.html">
+            <svg class="logo__icon">
+              <use href="./images/icons.svg#icon-warrior"></use>
+            </svg>
+            <div class="logo__letters">
+              <span class="logo__letters--white">наша <br> галичина</span><br>Благодійний фонд
+            </div>
+          </a>
+          <div class="language">
+            <div class="language__free-space"></div>
+            <div class="language__icon">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-language"></use>
+              </svg>
+            </div>
+            <ul class="language__list language__list--mobile">
+              <li>
+                <a class="language__item language__item--ukrainian current" href="./index.html">UA</a>
+              </li>
+              <li>
+                <a class="language__item" href="./en.html">ENG</a>
+              </li>
+            </ul>
+            <ul class="language__list language__list--desktop">
+              <li>
+                <a class="language__item language__item--ukrainian current" href="./index.html">Українська</a>
+              </li>
+              <li>
+                <a class="language__item" href="./en.html">English</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <address class="address--header">
+          <a class="address__link" href="tel:+380970844528">
+            <svg class="address__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+            +38 (097) 084 4528</a
+          >
+        </address>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section--hero hero">
+        <div class="hero__background"></div>
+        <div class="container hero__container">
+          <h1 class="hero__title">Збір коштів для потреб українських військових</h1>
+          <p class="hero__description">Наші Захисники є сильними та незламними духом. Їхнім героїзмом сьогодні захоплюється весь світ. Однак для захисту своєї Батьківщини їм вкрай бракує базового військового спорядження.
+          </p>
+          <button onclick="location.href=button.getUrl()" class="hero__button button">Підтримати</button>
+        </div>
+      </section>
+
+      <section class="section section--foundation">
+        <div class="container foundation">
+          <div class="foundation__circle"></div>
+          <h2 class="foundation__title">Благодійний фонд <br> <span class="foundation__title--bold">“Наша Галичина”</span></h2>
+          <p class="foundation__description">Благодійна організація <span class="foundation__description--bold">“Наша Галичина”</span> діє з 2017 року. До недавнього часу ключовими напрямками нашої діяльності було відновлення та створення об’єктів історико-культурної спадщини, підтримка програм національно-культурного розвитку. Однак після російського вторгнення, ми, як і більшість організацій в країні, спрямували всі свої сили на <span class="foundation__description--bold">допомогу українській армії.</span></p>
+          <a class="foundation__link" href="https://drive.google.com/drive/folders/1mvNzuKH6zcvSV4MA2s6HtQ_LDXompOO3?fbclid=IwAR0_ZT_VU9OA91MYGp8tiqLMDqHxB1o_vtxvVAc5E6R7xqNifsbhTqT4TUk" target="_blank">Дивитись&#160;<span class="foundation__link--bold">офіційні документи</span> 
+            <svg class="foundation__icon" width="52" height="52">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="section section--ukraine">
+        <div class="ukraine__image"></div>
+        <div class="container">
+          <div class="ukraine__description">
+            <h2 class="ukraine__title">Сьогодні Україна захищає не лише свою землю, але всю Європу!</h2>
+            <p class="ukraine__text">Ми запрошуємо до співпраці всіх українців, зокрема нашу діаспору, закордонні і міжнародні благодійні організації, та всіх людей доброї волі. Допоможіть зупинити цю жахливу війну та відновити світовий порядок!</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--ammunition">
+        <div class="container">
+          <h2 class="ammunition__title">Збираємо кошти на&#160; <br> <span class="ammunition__title--bold">військову амуніцію</span></h2>
+          <p class="ammunition__description">Критично необхідне <span class="ammunition__description--bold">спорядження</span> для наших військових на передовій:</p>
+          <ul class="ammunition__list">
+            <li class="ammunition__item">
+              <img class="ammunition__image"
+                srcset="./images/helmet.jpg 1x, ./images/helmet@2x.jpg 2x"
+                src="./images/helmet.jpg"
+                alt="каски"
+                width="120"
+                loading="lazy"
+              />
+              <h3 class="ammunition__name">Каски</h3>
+            </li>
+
+            <li class="ammunition__item">
+              <img class="ammunition__image"
+                srcset="./images/bullet-proof.jpg 1x, ./images/bullet-proof@2x.jpg 2x"
+                src="./images/bullet-proof.jpg"
+                alt="бронежилети"
+                width="120"
+                loading="lazy"
+              />
+              <h3 class="ammunition__name">Бронежилети</h3>
+            </li>
+
+            <li class="ammunition__item">
+              <img class="ammunition__image"
+                srcset="./images/walkie-talkie.jpg 1x, ./images/walkie-talkie@2x.jpg 2x"
+                src="./images/walkie-talkie.jpg"
+                alt="амуніція"
+                width="120"
+                loading="lazy"
+              />
+              <h3 class="ammunition__name">Військова амуніція</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section--details details">
+        <div class="container">
+          <div class="details__header">
+            <h2 class="details__title">Давайте збережемо життя і здоров’я <span class="details__title--bold">воїнів</span>, які оберігають нас!</h2>
+            <button onclick="location.href=button.getUrl()" class="button">Підтримати</button>
+          </div>
+
+          <ul class="details__list">
+            <li class="details__item">
+              <div>
+                <h3 class="details__name">Реквізити фонду для <span class="details__name--bold">переказів з України</span></h3>
+                <h4 class="details__currency">uah (&#8372)</h4>
+                <ul class="bank">
+                  <li class="bank__details">Найменування організації: <br> БФ НАША ГАЛИЧИНА</li>
+                  <li class="bank__details">IBAN: UA583387830000026008055129388</li>
+                  <li class="bank__details">Назва банку: ТЕРНОПІЛЬСЬКА <br> ФІЛІЯ АТ КБ «Приватбанк»</li>
+                  <li class="bank__details">Код отримувача: 41380203</li>
+                  <li class="bank__details">Валюта: UAH</li>
+                  <li class="bank__details">Призначення платежу: <br> благодійний внесок</li>
+                </ul>
+              </div>
+              <a class="details__link" href="https://pay.fondy.eu/s/Au88Y2B2iP6s1">Сплатити карткою</a>
+            </li>
+            
+            <li class="details__item">
+              <div>
+                <h3 class="details__name">Реквізити фонду для <span class="details__name--bold">переказів з-за кордону</span></h3>
+                <h4 class="details__currency">usd ($)</h4>
+                <ul class="bank">
+                  <li class="bank__details">Company Name: <br> БФ НАША ГАЛИЧИНА</li>
+                  <li class="bank__details">IBAN Code: UA873387830000026009055131063</li>
+                  <li class="bank__details">Name of the bank: JSC CB “PRIVATBANK”, 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE</li>
+                  <li class="bank__details">Bank SWIFT Code: PBANUA2X</li>
+                  <li class="bank__details bank__details--bold">Correspondent banks</li>
+                  <li class="bank__details">Account in the correspondent bank: 001-1-000080</li>
+                  <li class="bank__details">SWIFT Code of the correspondent bank: CHASUS33</li>
+                  <li class="bank__details">Correspondent bank: JP Morgan Chase Bank, New York ,USA</li>
+                  <li class="bank__details">----------</li>
+                  <li class="bank__details">Account in the correspondent bank: 890-0085-754</li>
+                  <li class="bank__details">SWIFT Code of the correspondent bank: IRVT US 3N</li>
+                  <li class="bank__details">Correspondent bank: The Bank of New York Mellon, New York, USA</li>
+                </ul>
+              </div>
+              <a class="details__link" href="https://pay.fondy.eu/s/oMBZBvEMujmqz01">Сплатити карткою</a>
+            </li>
+
+            <li class="details__item">
+              <div>
+                <h3 class="details__name">Реквізити фонду для <span class="details__name--bold">переказів  з-за кордону</span></h3>
+                <h4 class="details__currency">eur (€)</h4>
+                <ul class="bank">
+                  <li class="bank__details">Company Name: <br> БФ НАША ГАЛИЧИНА</li>
+                  <li class="bank__details">IBAN Code: UA353387830000026001055139740</li>
+                  <li class="bank__details">Name of the bank: JSC CB “PRIVATBANK”, 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE</li>
+                  <li class="bank__details">Bank SWIFT Code: PBANUA2X</li>
+                  <li class="bank__details bank__details--bold">Correspondent banks</li>
+                  <li class="bank__details">Account in the correspondent bank: 400886700401</li>
+                  <li class="bank__details">SWIFT Code of the correspondent bank: COBADEFF</li>
+                  <li class="bank__details">Correspondent bank: Commerzbank AG, Frankfurt am Main, Germany</li>
+                  <li class="bank__details">----------</li>
+                  <li class="bank__details">Account in the correspondent bank: 6231605145</li>
+                  <li class="bank__details">SWIFT Code of the correspondent bank: CHASDEFX</li>
+                  <li class="bank__details">Correspondent bank: J.P.MORGAN AG, FRANKFURT AM MAIN, GERMANY</li>
+                </ul>
+              </div>
+              <a class="details__link" href="https://pay.fondy.eu/s/jpCWSMVnQsT5z8na">Сплатити карткою</a>
+            </li>
+
+            <li class="details__item">
+              <div>
+                <h3 class="details__name">Реквізити фонду для <span class="details__name--bold">переказів  з-за кордону</span></h3>
+                <h4 class="details__currency">gbp (£)</h4>
+                <ul class="bank">
+                  <li class="bank__details">Company Name: <br> БФ НАША ГАЛИЧИНА</li>
+                  <li class="bank__details">IBAN Code: UA693387830000026002055135408</li>
+                  <li class="bank__details">Name of the bank: JSC CB “PRIVATBANK”, 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE</li>
+                  <li class="bank__details">Bank SWIFT Code: PBANUA2X</li>
+                  <li class="bank__details bank__details--bold">Correspondent bank</li>
+                  <li class="bank__details">Account in the correspondent bank: 24549501 SORT CODE 609242</li>
+                  <li class="bank__details">SWIFT Code of the correspondent bank: CHASGB2L</li>
+                  <li class="bank__details">Correspondent bank: J P Morgan Chase Bank, Bournemouth, UK</li>
+                </ul>
+              </div>
+              <a class="details__link" href="https://pay.fondy.eu/s/Efkr">Сплатити карткою</a>
+            </li>
+
+            <li class="details__item">
+              <div>
+                <h3 class="details__name">Реквізити фонду для <span class="details__name--bold">переказів  з-за кордону</span></h3>
+                <h4 class="details__currency">pln (zł)</h4>
+                <ul class="bank">
+                  <li class="bank__details">Company Name: <br> БФ НАША ГАЛИЧИНА</li>
+                  <li class="bank__details">IBAN Code: UA033387830000026003055145486</li>
+                  <li class="bank__details">Name of the bank: JSC CB “PRIVATBANK”, 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE</li>
+                  <li class="bank__details">Bank SWIFT Code: PBANUA2X</li>
+                  <li class="bank__details bank__details--bold">Correspondent bank</li>
+                  <li class="bank__details">Account in the correspondent bank: PL13124000013140533111120301</li>
+                  <li class="bank__details">SWIFT Code of the correspondent bank: PKOPPLPW</li>
+                  <li class="bank__details">Correspondent bank: Bank Pekao/Grupa Pekao S.A., Warsaw, Poland</li>
+                </ul>
+              </div>
+              <a class="details__link" href="https://pay.fondy.eu/s/bOX3yiwjiguhh">Сплатити карткою</a>
+            </li>
+
+            <li class="details__item">
+              <div>
+                <h3 class="details__name">Реквізити фонду для <span class="details__name--bold">переказів  з-за кордону</span></h3>
+                <h4 class="details__currency">sek (kr)</h4>
+                <ul class="bank">
+                  <li class="bank__details">Company Name: <br> БФ НАША ГАЛИЧИНА</li>
+                  <li class="bank__details">IBAN Code: UA783387830000026005055136114</li>
+                  <li class="bank__details">Name of the bank: JSC CB “PRIVATBANK”, 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE</li>
+                  <li class="bank__details">Bank SWIFT Code: PBANUA2X</li>
+                  <li class="bank__details bank__details--bold">Correspondent banks</li>
+                  <li class="bank__details">Account in the correspondent bank: 8033055448</li>
+                  <li class="bank__details">SWIFT Code of the correspondent bank: IRVTUS3N</li>
+                  <li class="bank__details">Correspondent bank: BANK OF NEW YORK MELLON, NEW YORK, USA</li>
+                  <li class="bank__details">Сorrespondent′s bank аccount in the intermediary bank: SE7450000000052018513303</li>
+                  <li class="bank__details">Intermediary bank: SKANDINAVISKA ENSKILDA BANKEN, STOCKHOLM, SWEDEN</li>
+                  <li class="bank__details">IDENTIFICATION CODE OF THE INTERMEDIARY BANK: ESSESESS</li>
+                </ul>
+              </div>
+              <a class="details__link" href="https://pay.fondy.eu/s/doyI">Сплатити карткою</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <a class="logo logo--footer" href="./index.html">
+          <svg class="logo__icon logo__icon--footer">
+            <use href="./images/icons.svg#icon-warrior"></use>
+          </svg>
+          <div class="logo__letters logo__letters--footer">
+            <span class="logo__letters--white logo__letters--white--footer">наша <br> галичина</span><br>Благодійний фонд
+          </div>
+        </a>
+        <address class="address">
+          <ul class="address__list">
+            <li class="address__item">
+              <a class="address__link" href="tel:+380970844528">
+                <svg class="address__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                +38 (097) 084 4528</a
+              >
+            </li>
+            <li class="address__item">
+              <a class="address__link" href="mailto:nashagalicia@gmail.com">
+                <svg class="address__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                nashagalicia@gmail.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <a class="footer__link" href="https://www.facebook.com/%D0%91%D0%BB%D0%B0%D0%B3%D0%BE%D0%B4%D1%96%D0%B9%D0%BD%D0%B8%D0%B9-%D1%84%D0%BE%D0%BD%D0%B4-%D0%9D%D0%B0%D1%88%D0%B0-%D0%93%D0%B0%D0%BB%D0%B8%D1%87%D0%B8%D0%BD%D0%B0-110032204964016" target="_blank">
+          <svg class="footer__icon" width="36" height="36">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <script src="https://pay.fondy.eu/static_common/v1/checkout/ipsp.js"></script>
+    <script>
+      var button = $ipsp.get('button');
+      button.setMerchantId( 1501725);
+      button.setAmount('', 'UAH');
+      button.setHost('pay.fondy.eu');
+    </script>
+    
+  </body>
+</html>

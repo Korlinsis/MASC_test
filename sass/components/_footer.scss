@@ -1,0 +1,23 @@
+.footer {
+  padding: 36px 0;
+  background-color: var(--blue);
+
+  @media screen and (min-width: $desktop) {
+    padding: 60px 0;
+  }
+}
+
+.footer__container {
+  position: relative;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.footer__link {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+}

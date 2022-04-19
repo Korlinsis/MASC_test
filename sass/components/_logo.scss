@@ -1,0 +1,66 @@
+.logo {
+  display: flex;
+  text-decoration: none;
+}
+
+.logo--footer {
+  margin-bottom: 36px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.logo__icon {
+  display: block;
+  fill: var(--accent);
+  width: 25px;
+  height: 45px;
+
+  @media screen and (min-width: $desktop) {
+    width: 32px;
+    height: 61px;
+  }
+
+  &--footer {
+    width: 32px;
+    height: 61px;
+  }
+}
+
+.logo__letters {
+  display: block;
+  margin-left: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--accent);
+
+  @media screen and (min-width: $desktop) {
+    font-size: 12px;
+    line-height: 1.04;
+  }
+
+  &--footer {
+    font-size: 12px;
+    line-height: 1.04;
+  }
+
+  &--white {
+    font-weight: 750;
+    font-size: 16px;
+    line-height: 1;
+    color: var(--white);
+    text-transform: uppercase;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 24px;
+  }
+
+    &--footer {
+      font-size: 24px;
+    }
+  } 
+}

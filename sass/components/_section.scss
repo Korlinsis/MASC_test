@@ -1,0 +1,49 @@
+.section {
+  &--hero {
+    padding: 209px 0 168px;
+    
+    @media screen and (min-width: $desktop) {
+      padding: 239px 0 140px;
+    }
+  }
+
+  &--hero-english {
+    @media screen and (min-width: $desktop) {
+      padding: 239px 0 116px;
+    }
+  }
+
+  &--foundation {
+    padding: 96px 0 84px;
+
+    @media screen and (min-width: $desktop) {
+      padding: 151px 0 150px;
+    }
+  }
+
+  &--ukraine {
+    padding: 430px 0 60px;
+    background-color: var(--blue);
+    position: relative;
+
+    @media screen and (min-width: $desktop) {
+      padding: 144px 0;
+    }
+  }
+
+  &--ammunition {
+    padding: 84px 0;
+
+    @media screen and (min-width: $desktop) {
+      padding: 164px 0;
+    }
+  }
+
+  &--details {
+    padding-bottom: 84px;
+
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 130px;
+    }
+  }
+}

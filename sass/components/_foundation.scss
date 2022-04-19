@@ -1,0 +1,107 @@
+.foundation {
+    position: relative;
+}
+
+.foundation__circle {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: var(--accent);
+    border-radius: 90px;
+    z-index: -1;
+
+    @media screen and (min-width: $desktop) {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.foundation__title {
+    position: relative;
+    margin-bottom: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.2;
+    color: var(--black);
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 0px;
+        font-size: 36px;
+    }
+
+    &--bold{
+        font-weight: 750;
+    }
+
+    &::after {
+        display: none;
+        content: "";
+        position: absolute;
+        top: 36px;
+        right: 0px;
+        background-color: var(--black);
+        width: 780px;
+        height: 1px;
+
+        @media screen and (min-width: $desktop) {
+            display: block;
+        }
+    }
+}
+
+.foundation__description {
+    margin-bottom: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.07em;
+    color: var(--black-text);
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 36px;
+        margin-left: 700px;
+    }
+
+    &--bold{
+        font-weight: 700;
+    }
+}
+
+.foundation__link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    color: var(--black-text);
+    fill: var(--accent);
+
+    transition: fill var(--animation-time) var(--animation-function);
+
+    display: flex;
+    align-items: center;
+
+    &--bold{
+        font-weight: 700;
+    }
+
+    &:hover,
+    &:focus {
+        fill: #f3bb03;    
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 700px;
+        letter-spacing: 0.07em;
+    }
+}
+
+.foundation__icon {
+    margin-left: 16px;
+    fill: current;
+}

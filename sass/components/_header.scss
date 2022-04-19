@@ -1,0 +1,136 @@
+.header {
+  padding: 18px 0;
+
+  @media screen and (min-width: $desktop) {
+    padding: 28px 0;
+  }
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: $desktop) {
+    justify-content: space-between;
+  }
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 64px;
+  }
+}
+
+.language__free-space {
+  width: 16px;
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.language__free-space-desktop {
+  display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+    width: 4px;
+  }
+}
+
+.language__icon {
+  stroke: var(--accent);
+  margin-right: 8px;
+}
+
+.language__list {
+  display: flex;
+  align-items: center;
+}
+
+.language__list--mobile {
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.language__list--desktop {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.language__item {
+  display: block;
+  position: relative;
+  padding: 5px 0;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
+  color: var(--white);
+
+  transition: color var(--animation-time) var(--animation-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: var(--accent);
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity var(--animation-time) var(--animation-function);
+  }
+}
+
+.language__item:hover::after,
+.language__item:focus::after {
+  opacity: 1;
+}
+
+.language__item--ukrainian {
+  margin-right: 10px;
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 20px;
+  }
+}
+
+.current {
+  color: var(--accent);
+
+  &::after {
+    opacity: 1;
+  }
+}
+
+.address--header {
+  display: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.38;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
+}
