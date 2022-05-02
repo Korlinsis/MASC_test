@@ -1,11 +1,10 @@
 .container {
-  width: 375px;
+  max-width: 1200px;
   padding: 0 16px;
   margin-right: auto;
   margin-left: auto;
 
-  @media screen and (min-width: $desktop) {
-    width: 1200px;
-    padding: 0 10px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
